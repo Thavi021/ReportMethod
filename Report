@@ -1,0 +1,22 @@
+    public static void Report()
+    {
+         for (int i = 0; i < ArrayListClass.productCodes.size(); i++) {
+            //if found must display the product details
+        System.out.println("************************************");
+        System.out.println("PRINT REPORT PRODUCT");
+        System.out.println("************************************");
+        System.out.println("PRODUCT CODE:" + ArrayListClass.productCodes.get(i));
+        System.out.println("PRODUCT NAME:" + ArrayListClass.productNames.get(i));
+        System.out.println("PRODUCT WARRANTY:" + ArrayListClass.actualProductWarranty.get(i));
+        System.out.println("PRODUCT CATEGORY:" + ArrayListClass.productCategoryDesc.get(i));
+        System.out.println("PRODUCT PRICE:" + ArrayListClass.productPrice.get(i));
+        System.out.println("PRODUCT STOCK LEVELS:" + ArrayListClass.stockLevels.get(i));
+        System.out.println("PRODUCT SUPPLIERS:" + ArrayListClass.supplierNames.get(i));
+        System.out.println("*************************************");
+         }
+         double sum = 0;
+for(int i = 0; i < ArrayListClass.productPrice.size(); i++)
+    sum += ArrayListClass.productPrice.get(i);
+//return sum;
+         System.out.println("Grand Total:" + sum);
+    }
